@@ -1,0 +1,83 @@
+/* Hero */
+
+.hero__container {
+  background-color: #fefaf5;
+  width: 100vw;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 20rem 10rem 4rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__description {
+  font-size: 1.25rem;
+}
+
+.hero__button {
+  background-color: #db7a4e;
+  border-radius: 15px;
+  border: 0;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  width: 10rem;
+}
+
+.hero__image {
+  width: 37rem;
+  display: flex;
+  padding-right: 10rem;
+}
+
+.hero__right {
+  display: flex;
+}
+
+/* Recommendations */
+
+.recommendations__title {
+  font-size: 2.25rem;
+  padding-left: 4rem;
+}
+
+.recommendations__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.recommendations__card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem;
+  padding-bottom: 0;
+}
+
+.recommendations__link {
+  text-decoration: none;
+}
+
+.recommendations__image {
+  width: 350px;
+  height: 500px;
+}
+
+.recommendations__card--title {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 2rem;
+  color: #fff;
+}
