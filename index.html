@@ -12,8 +12,8 @@
   <body>
     <!-- header -->
     <header>
-      <nav>
-        <h3 class="nav__logo">Travel Site</h3>
+      <nav class="nav">
+        <a href="./index.html"><h3 class="nav__logo">Travel Site</h3></a>
         <ul class="nav__list">
           <li class="nav__item nav__item--active">
             <a class="nav__link" href="./index.html">Home</a>
@@ -45,7 +45,11 @@
             <button class="hero__button">Get started</button>
           </div>
           <div class="hero__right">
-            <img class="hero__image" src="./assets/images/hero.png" />
+            <img
+              class="hero__image"
+              src="./assets/images/hero.png"
+              alt="airplane"
+            />
           </div>
         </div>
       </section>
@@ -58,6 +62,7 @@
               <img
                 class="recommendations__image"
                 src="./assets/images/hawaii.jpg"
+                alt="hawaii"
               />
               <h2 class="recommendations__card--title">Hawaii</h2>
             </div>
@@ -67,6 +72,7 @@
               <img
                 class="recommendations__image"
                 src="./assets/images/iceland.jpg"
+                alt="iceland"
               />
               <h2 class="recommendations__card--title">Iceland</h2>
             </div>
@@ -76,6 +82,7 @@
               <img
                 class="recommendations__image"
                 src="./assets/images/greece.jpg"
+                alt="greece"
               />
               <h2 class="recommendations__card--title">Greece</h2>
             </div>
@@ -83,5 +90,57 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__section">
+        <h2>Contact</h2>
+        <p class="footer__subheading">Email</p>
+        <a
+          class="footer__subheading footer__subheading--second"
+          href="mailto:infor@travelsite.com"
+          >info@travelsite.com</a
+        >
+      </div>
+      <div class="footer__section">
+        <h2>Hours</h2>
+        <div class="footer__hours">
+          <div class="footer__dates">
+            <p class="footer__subheading">Monday-Friday</p>
+            <p class="footer__subheading footer__subheading--second">
+              9:00 AM - 5:00 PM
+            </p>
+          </div>
+          <div class="footer__dates">
+            <p class="footer__subheading">Saturday</p>
+            <p class="footer__subheading footer__subheading--second">
+              10:00 AM - 4:00 PM
+            </p>
+          </div>
+          <div class="footer__dates">
+            <p class="footer__subheading">Sunday</p>
+            <p class="footer__subheading footer__subheading--second">Closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__section">
+        <h2>Social</h2>
+        <div class="footer__icon-container">
+          <img
+            class="footer__icon"
+            src="./assets/images/icon-instagram.png"
+            alt="instagram"
+          />
+          <img
+            class="footer__icon footer__icon--facebook"
+            src="./assets/images/icon-facebook.png"
+            alt="facebook"
+          />
+          <img
+            class="footer__icon"
+            src="./assets/images/icon-twitter.png"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

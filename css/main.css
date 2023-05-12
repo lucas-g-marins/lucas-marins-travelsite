@@ -1,11 +1,112 @@
-/* Hero */
+* {
+  box-sizing: content-box;
+}
 
+body {
+  max-width: 1280px;
+}
+
+h1,
+h2,
+h3 {
+  color: #335576;
+  font-family: Verdana;
+}
+
+p {
+  font-family: Verdana;
+}
+
+a {
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 10;
+}
+.nav__logo {
+  font-size: 2rem;
+  display: flex;
+  padding: 0.5rem 0.5rem 0.5rem 4rem;
+  margin-bottom: 0.5rem;
+}
+.nav__list {
+  width: 30%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+  margin-right: 1.5rem;
+}
+.nav__item {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+.nav__item--active {
+  border-bottom: 3px solid #db7a4e;
+}
+.nav__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer {
+  background-color: #fefaf5;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer__subheading {
+  color: #db7a4e;
+  display: flex;
+  margin-right: 2rem;
+  font-size: 0.9rem;
+}
+.footer__subheading--second {
+  color: #335576;
+  font-size: 1rem;
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer__hours {
+  display: flex;
+}
+.footer__icon-container {
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+}
+.footer__icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 1rem;
+}
+.footer__icon--facebook {
+  width: 17px;
+  height: 24px;
+}
+
+/* Hero */
 .hero__container {
   background-color: #fefaf5;
   width: 100vw;
   padding: 5rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -13,25 +114,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10rem 20rem 10rem 4rem;
+  padding: 8rem 20rem 10rem 4rem;
 }
 
 .hero__title {
   font-size: 3rem;
+  padding-left: 2rem;
 }
 
 .hero__description {
   font-size: 1.25rem;
+  padding-left: 2rem;
+  color: #335576;
 }
 
 .hero__button {
   background-color: #db7a4e;
-  border-radius: 15px;
+  border-radius: 20px;
   border: 0;
   color: #fff;
   font-size: 1.25rem;
+  font-family: Verdana;
   padding: 0.5rem;
   width: 10rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .hero__image {
@@ -45,7 +152,6 @@
 }
 
 /* Recommendations */
-
 .recommendations__title {
   font-size: 2.25rem;
   padding-left: 4rem;
@@ -64,6 +170,7 @@
   position: relative;
   margin: 2rem;
   padding-bottom: 0;
+  box-shadow: 5px 5px 2px #aaaaaa;
 }
 
 .recommendations__link {
@@ -72,7 +179,10 @@
 
 .recommendations__image {
   width: 350px;
-  height: 500px;
+  height: 100%;
+  padding-bottom: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .recommendations__card--title {
@@ -81,3 +191,10 @@
   right: 2rem;
   color: #fff;
 }
+
+@media (max-width: 1280px) {
+  .hero__image {
+    padding-right: 2rem;
+    width: 30rem;
+  }
+}/*# sourceMappingURL=main.css.map */
