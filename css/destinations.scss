@@ -48,11 +48,26 @@
     font-family: $base-font;
   }
 
+  &__list {
+    list-style-type: none;
+    // padding: 0rem 1rem 2rem 1rem;
+    margin: 1rem 1rem;
+    padding-left: 0rem;
+  }
+
   &__item {
     padding: 0.5rem 4rem;
-    margin: 1rem 1rem;
+    margin: 1.5rem 1rem;
     background-color: $background-color;
     font-weight: 400;
     font-family: $base-font;
+
+    &--title {
+      border-bottom: 3px solid #000;
+      background-color: #fff;
+      font-weight: 600;
+      margin-top: 0rem;
+      padding: 0%;
+    }
   }
 }
