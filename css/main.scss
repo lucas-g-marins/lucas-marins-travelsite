@@ -49,6 +49,10 @@
     width: 37rem;
     display: flex;
     padding-right: 10rem;
+    @include small-desktop {
+      padding-right: 2rem;
+      width: 30rem;
+    }
   }
 }
 
@@ -93,12 +97,5 @@
     height: 100%;
     padding-bottom: 0%;
     object-fit: cover;
-  }
-}
-
-@media (max-width: 1280px) {
-  .hero__image {
-    padding-right: 2rem;
-    width: 30rem;
   }
 }
