@@ -80,6 +80,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     width: 21.875rem;
     height: 32.813rem;
+    @include small-desktop {
+      width: 19rem;
+      height: 30rem;
+    }
     &--title {
       position: absolute;
       bottom: 0.5rem;
