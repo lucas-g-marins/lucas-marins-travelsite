@@ -15,6 +15,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 8rem 20rem 10rem 4rem;
+    @include small-desktop {
+      padding-left: 2rem;
+      padding-right: 8rem;
+    }
   }
 
   &__right {
