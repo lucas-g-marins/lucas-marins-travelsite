@@ -7,18 +7,15 @@
   width: 100vw;
   padding: 5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 0%;
 
   &__left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8rem 20rem 10rem 4rem;
-    @include small-desktop {
-      padding-left: 2rem;
-      padding-right: 8rem;
-    }
+    width: 40%;
   }
 
   &__right {
@@ -28,6 +25,7 @@
   &__title {
     font-size: 3rem;
     padding-left: 2rem;
+    // padding-right: 2rem;
   }
 
   &__description {
@@ -50,9 +48,9 @@
   }
 
   &__image {
-    width: 37rem;
+    width: 35rem;
     display: flex;
-    padding-right: 10rem;
+    padding-top: 1rem;
     @include small-desktop {
       padding-right: 2rem;
       width: 30rem;

@@ -10,12 +10,12 @@ $base-font: Verdana;
 }
 
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
-// body {
-//   max-width: 1280px;
-// }
+body {
+  max-width: 1280px;
+}
 
 h1,
 h2,
